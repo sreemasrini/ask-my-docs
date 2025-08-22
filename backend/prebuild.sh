@@ -1,6 +1,14 @@
 #!/bin/bash
 set -e
 
+# Create virtual environment if it doesn't exist
+if [ ! -d "venv" ]; then
+    python3 -m venv venv
+fi
+
+# Activate virtual environment
+. venv/bin/activate
+
 # Print Python version
 python3 --version
 
