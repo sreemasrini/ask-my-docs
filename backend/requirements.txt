@@ -1,0 +1,10 @@
+fastapi==0.109.0
+uvicorn==0.24.0
+pymongo==4.6.1
+openai==1.12.0
+python-multipart==0.0.9
+langchain==0.1.9
+pypdf==4.0.1
+tiktoken==0.5.2
+numpy==1.26.3
+pydantic==2.6.1
