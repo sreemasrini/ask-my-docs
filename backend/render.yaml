@@ -3,7 +3,7 @@ services:
     name: ask-my-docs-backend
     env: python
     buildCommand: |
-      python -m venv venv
+      python3 -m venv venv
       . venv/bin/activate
       pip install --upgrade pip
       pip install wheel
@@ -13,6 +13,6 @@ services:
       uvicorn app.main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: PYTHON_VERSION
-        value: 3.10.0
+        value: 3.10.12
       - key: PIP_ONLY_BINARY
         value: :all:

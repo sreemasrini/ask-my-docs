@@ -7,5 +7,6 @@ langchain==0.1.9
 pypdf==4.0.1
 tiktoken==0.5.2
 numpy==1.26.3
-pydantic==2.6.1 --only-binary=:all:
-pydantic-core==2.16.2 --only-binary=:all:
+pydantic==2.7.1
+pydantic-core==2.16.2
+pydantic-settings==2.2.1
