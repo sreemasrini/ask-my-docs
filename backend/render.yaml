@@ -2,6 +2,7 @@ services:
   - type: web
     name: ask-my-docs-backend
     env: python
+    runtime: python3.10.12
     buildCommand: |
       python3 -m venv venv
       . venv/bin/activate

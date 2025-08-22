@@ -1,9 +1,12 @@
 #!/bin/bash
 set -e
 
-# Upgrade pip and install wheel
-pip install --upgrade pip
-pip install wheel
+# Print Python version
+python3 --version
 
-# Force pre-built wheels
-pip install --only-binary=:all: -r requirements.txt
+# Upgrade pip and install wheel
+python3 -m pip install --upgrade pip
+python3 -m pip install wheel
+
+# Force pre-built wheels with compatibility
+python3 -m pip install --only-binary=:all: -r requirements.txt
