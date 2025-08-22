@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: ask-my-docs-backend
+    env: python
+    buildCommand: |
+      python -m venv venv
+      . venv/bin/activate
+      pip install --upgrade pip
+      pip install -r requirements.txt
+    startCommand: |
+      . venv/bin/activate
+      uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.0
